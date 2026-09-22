@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact — FEM'26</title>
+<meta name="description" content="Contact FEM'26 at Future World School &amp; College, H-11, Islamabad. Email info.fem26@gmail.com or reach the registration team and faculty contacts.">
+<meta name="theme-color" content="#0B0F1A">
+<meta property="og:site_name" content="FEM'26">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Contact — FEM'26">
+<meta property="og:description" content="Questions about registration, payments, or the three segments? Reach the FEM'26 council, faculty, or write to info.fem26@gmail.com.">
+<meta property="og:image" content="assets/logo.png">
+<meta property="og:image:alt" content="FEM'26 medallion logo">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Contact — FEM'26">
+<meta name="twitter:description" content="Questions about registration, payments, or the three segments? Reach the FEM'26 team at Future World School &amp; College.">
+<meta name="twitter:image" content="assets/logo.png">
+<meta name="twitter:image:alt" content="FEM'26 medallion logo">
+<link rel="icon" href="assets/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=Manrope:wght@400;500;600;700&family=Caveat:wght@600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy: #0B0F1A;
+    --navy-2: #121A2E;
+    --gold: #B8963E;
+    --gold-hi: #D9BA6C;
+    --gold-dark: #8A6B26;
+    --cream: #F5F1E6;
+    --cream-dim: #A79E86;
+    --glass-bg: rgba(18,26,46,.38);
+    --glass-border: rgba(217,186,108,.28);
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth; overflow-x:hidden;}
+  body{
+    margin:0; background:var(--navy); color:var(--cream);
+    font-family:'Manrope',sans-serif;
+    overflow-x:hidden;
+  }
+  a{text-decoration:none; color:inherit;}
+  .skip-link{
+    position:absolute; left:16px; top:-48px; z-index:100;
+    background:var(--gold); color:var(--navy); font-weight:700;
+    padding:10px 16px; border-radius:8px;
+  }
+  .skip-link:focus{ top:16px; }
+
+  header.nav{
+    position:fixed; top:0; left:0; right:0; z-index:50;
+    display:flex; align-items:center; justify-content:space-between;
+    padding:22px clamp(20px,4vw,56px);
+    gap:16px;
+  }
+  .brand{
+    font-family:'Syne',sans-serif; font-weight:800; font-size:20px;
+    color:var(--cream); letter-spacing:.02em;
+  }
+  .nav-pills{ display:flex; gap:12px; }
+  .nav-pill{
+    position:relative;
+    font-size:13.5px; font-weight:600; color:var(--cream);
+    padding:9px 20px; border-radius:999px;
+    background:linear-gradient(155deg, rgba(255,255,255,.06), rgba(217,186,108,.05));
+    -webkit-backdrop-filter:blur(16px) saturate(140%);
+    backdrop-filter:blur(16px) saturate(140%);
+    border:1px solid var(--glass-border);
+    box-shadow:inset 0 1px 0 rgba(255,255,255,.08), 0 4px 14px rgba(0,0,0,.18);
+    overflow:hidden;
+    transition:background .35s cubic-bezier(.16,.8,.24,1),
+               border-color .35s cubic-bezier(.16,.8,.24,1),
+               color .35s cubic-bezier(.16,.8,.24,1),
+               transform .35s cubic-bezier(.16,.8,.24,1),
+               box-shadow .35s cubic-bezier(.16,.8,.24,1);
+  }
+  .nav-pill::before{
+    content:"";
+    position:absolute; inset:0; border-radius:999px;
+    background:linear-gradient(120deg, transparent 30%, rgba(255,255,255,.14) 50%, transparent 70%);
+    transform:translateX(-120%);
+    transition:transform .6s ease;
+  }
+  .nav-pill:hover::before{transform:translateX(120%);}
+  .nav-pill:hover, .nav-pill.is-active{
+    background:linear-gradient(155deg, rgba(217,186,108,.16), rgba(217,186,108,.06));
+    border-color:var(--gold-hi); color:var(--gold-hi);
+  }
+  .nav-end{
+    display:flex; align-items:center; gap:10px; flex:none;
+  }
+  .nav-register{
+    position:relative;
+    font-size:13.5px; font-weight:700; color:var(--gold-hi);
+    padding:11px 26px; border-radius:999px;
+    background:linear-gradient(155deg, rgba(217,186,108,.28), rgba(217,186,108,.08));
+    -webkit-backdrop-filter:blur(16px) saturate(140%);
+    backdrop-filter:blur(16px) saturate(140%);
+    border:1px solid rgba(217,186,108,.7);
+    box-shadow:inset 0 1px 0 rgba(255,255,255,.16), 0 8px 22px rgba(184,150,62,.28);
+    overflow:hidden;
+    transition:background .25s ease, border-color .25s ease, transform .25s ease, box-shadow .25s ease, color .25s ease;
+  }
+  .nav-register::before{
+    content:"";
+    position:absolute; inset:0; border-radius:999px;
+    background:linear-gradient(120deg, transparent 30%, rgba(255,255,255,.18) 50%, transparent 70%);
+    transform:translateX(-120%);
+    transition:transform .6s ease;
+  }
+  .nav-register:hover::before{transform:translateX(120%);}
+  .nav-register:hover{
+    background:linear-gradient(155deg, rgba(217,186,108,.42), rgba(217,186,108,.14));
+    border-color:var(--gold-hi); color:var(--cream);
+    transform:translateY(-2px);
+    box-shadow:inset 0 1px 0 rgba(255,255,255,.2), 0 12px 28px rgba(184,150,62,.38);
+  }
+  .nav-toggle{
+    display:none;
+    width:44px; height:44px; padding:0;
+    align-items:center; justify-content:center; flex-direction:column; gap:5px;
+    background:linear-gradient(155deg, rgba(255,255,255,.06), rgba(217,186,108,.05));
+    -webkit-backdrop-filter:blur(16px) saturate(140%);
+    backdrop-filter:blur(16px) saturate(140%);
+    border:1px solid var(--glass-border);
+    border-radius:12px;
+    cursor:pointer;
+  }
+  .nav-toggle span{
+    display:block; width:18px; height:1.5px; background:var(--gold-hi);
+    border-radius:2px; transition:transform .3s ease, opacity .3s ease;
+  }
+  header.nav.is-open .nav-toggle span:nth-child(1){ transform:translateY(6.5px) rotate(45deg); }
+  header.nav.is-open .nav-toggle span:nth-child(2){ opacity:0; }
+  header.nav.is-open .nav-toggle span:nth-child(3){ transform:translateY(-6.5px) rotate(-45deg); }
+
+  @media (max-width:860px){
+    header.nav{ padding:14px 16px; }
+    .nav-toggle{ display:flex; }
+    .nav-pills{
+      display:flex; flex-direction:column; gap:10px;
+      position:absolute; top:calc(100% + 8px); left:16px; right:16px;
+      padding:16px;
+      border-radius:16px;
+      background:rgba(18,26,46,.92);
+      -webkit-backdrop-filter:blur(20px) saturate(140%);
+      backdrop-filter:blur(20px) saturate(140%);
+      border:1px solid var(--glass-border);
+      box-shadow:0 20px 40px rgba(0,0,0,.45);
+      opacity:0; visibility:hidden; pointer-events:none;
+      transform:translateY(-8px);
+      transition:opacity .28s ease, transform .28s ease, visibility .28s ease;
+    }
+    header.nav.is-open .nav-pills{
+      opacity:1; visibility:visible; pointer-events:auto;
+      transform:translateY(0);
+    }
+    .nav-pill{ text-align:center; }
+    .nav-register{ padding:10px 18px; font-size:12.5px; }
+  }
+
+  .contact-page{
+    padding:140px 24px 80px;
+    max-width:1100px; margin:0 auto;
+  }
+  .contact-hero{ text-align:center; margin-bottom:56px; }
+  .contact-eyebrow{
+    display:inline-block; font-size:12px; letter-spacing:.28em; text-transform:uppercase;
+    color:var(--gold-dark); margin-bottom:14px;
+  }
+  .contact-hero h1{
+    font-family:'Syne',sans-serif; font-weight:700;
+    font-size:clamp(32px,5vw,52px); margin:0 0 14px; color:var(--cream);
+  }
+  .contact-hero h1 span{
+    font-family:'Caveat',cursive; color:var(--gold-hi); font-size:1.15em;
+  }
+  .contact-hero p{
+    margin:0 auto; max-width:52ch;
+    color:var(--cream-dim); font-size:15.5px; line-height:1.7;
+  }
+
+  .method-grid{
+    display:grid; grid-template-columns:repeat(3,1fr); gap:22px;
+    margin-bottom:48px;
+  }
+  .method-card{
+    text-align:center; padding:34px 22px 30px;
+    border:1px solid var(--glass-border);
+    background:linear-gradient(160deg, rgba(217,186,108,.07), transparent 65%), var(--navy-2);
+    border-radius:16px;
+    transition:transform .3s ease, border-color .3s ease;
+  }
+  .method-card:hover{
+    transform:translateY(-5px);
+    border-color:var(--gold-hi);
+  }
+  .method-icon{
+    width:62px; height:62px; margin:0 auto 18px;
+    border-radius:50%;
+    display:flex; align-items:center; justify-content:center;
+    background:rgba(217,186,108,.12);
+    border:1px solid rgba(217,186,108,.4);
+    color:var(--gold-hi);
+  }
+  .method-icon svg{ width:24px; height:24px; }
+  .method-card h2{
+    font-family:'Syne',sans-serif; font-size:18px; margin:0 0 8px; color:var(--gold-hi);
+  }
+  .method-card p, .method-card a{
+    font-size:13.5px; color:var(--cream-dim); line-height:1.55; margin:0;
+  }
+  .method-card a:hover{ color:var(--gold-hi); }
+
+  .contact-split{
+    display:grid; grid-template-columns:1fr 1.05fr; gap:28px;
+    align-items:stretch;
+  }
+  .query-card, .form-card{
+    border:1px solid var(--glass-border);
+    background:var(--navy-2);
+    border-radius:16px;
+    padding:34px 30px;
+  }
+  .query-card h2, .form-card h2{
+    font-family:'Syne',sans-serif; font-size:22px; margin:0 0 8px; color:var(--cream);
+  }
+  .query-card > p, .form-card > p{
+    color:var(--cream-dim); font-size:13.5px; line-height:1.6; margin:0 0 24px;
+  }
+  .person{
+    display:flex; justify-content:space-between; gap:16px;
+    padding:14px 0;
+    border-top:1px solid rgba(217,186,108,.14);
+  }
+  .person:first-of-type{ border-top:none; padding-top:0; }
+  .person strong{
+    display:block; font-size:14.5px; color:var(--cream); font-weight:700;
+  }
+  .person span{
+    display:block; font-size:12.5px; color:var(--cream-dim); margin-top:3px;
+  }
+  .person a{
+    font-size:12.5px; color:var(--gold-hi); align-self:center; text-align:right;
+  }
+
+  .form-card label{
+    display:block; font-size:12px; letter-spacing:.08em; text-transform:uppercase;
+    color:var(--gold-dark); margin:0 0 8px;
+  }
+  .form-card input, .form-card textarea{
+    width:100%; margin-bottom:16px;
+    background:rgba(11,15,26,.55);
+    border:1px solid var(--glass-border);
+    border-radius:8px;
+    color:var(--cream);
+    font-family:inherit; font-size:14.5px;
+    padding:12px 14px;
+  }
+  .form-card input:focus, .form-card textarea:focus{
+    outline:none; border-color:var(--gold-hi);
+  }
+  .form-card textarea{ min-height:120px; resize:vertical; }
+  .form-card button{
+    width:100%;
+    background:var(--gold); color:var(--navy);
+    font-weight:700; font-size:15px; font-family:inherit;
+    padding:14px 22px; border:0; border-radius:8px; cursor:pointer;
+    transition:background .2s ease;
+  }
+  .form-card button:hover{ background:var(--gold-hi); }
+  .form-note{ margin-top:10px; font-size:12px; color:var(--cream-dim); }
+
+  footer{
+    width:100%;
+    background:var(--navy-2);
+    border-top:1px solid rgba(217,186,108,.25);
+    padding:56px 24px 28px;
+  }
+  .foot-inner{
+    max-width:1100px; margin:0 auto;
+    display:flex; align-items:center; justify-content:space-between; gap:32px;
+    flex-wrap:wrap;
+  }
+  .foot-contact{ display:flex; flex-direction:column; gap:10px; }
+  .foot-brand{
+    font-family:'Syne',sans-serif; font-weight:700; font-size:18px;
+    color:var(--cream); margin-bottom:4px;
+  }
+  .foot-line{
+    display:flex; align-items:center; gap:8px;
+    font-size:13.5px; color:var(--cream-dim);
+  }
+  .foot-line a{ color:var(--cream-dim); transition:color .2s ease; }
+  .foot-line a:hover{ color:var(--gold-hi); }
+  .foot-line svg{ width:14px; height:14px; flex:none; color:var(--gold-dark); }
+  .foot-emblem{
+    width:128px; height:128px;
+    filter:drop-shadow(0 6px 14px rgba(0,0,0,.5));
+    flex:none;
+  }
+  .foot-emblem img{ width:100%; height:100%; object-fit:contain; }
+  .foot-bottom{
+    max-width:1100px; margin:40px auto 0;
+    padding-top:20px; border-top:1px solid rgba(217,186,108,.12);
+    text-align:center;
+    font-size:12px; color:var(--cream-dim); letter-spacing:.03em;
+  }
+
+  @media (max-width:860px){
+    .method-grid, .contact-split{ grid-template-columns:1fr; }
+    .person{ flex-direction:column; gap:6px; }
+    .person a{ text-align:left; }
+    .contact-page{ padding:120px 18px 64px; }
+  }
+  @media (max-width:640px){
+    .foot-inner{ justify-content:center; text-align:center; flex-direction:column; }
+    .foot-contact{ align-items:center; }
+    .query-card, .form-card{ padding:26px 20px; }
+    .contact-hero{ margin-bottom:36px; }
+  }
+</style>
+</head>
+<body>
+<a class="skip-link" href="#contact">Skip to content</a>
+
+<header class="nav">
+  <a class="brand" href="index.html">FEM'26</a>
+  <nav class="nav-pills" id="site-nav">
+    <a class="nav-pill" href="index.html#top">Home</a>
+    <a class="nav-pill" href="index.html#segments">Segments</a>
+    <a class="nav-pill" href="index.html#team">Team</a>
+    <a class="nav-pill is-active" href="contact.html">Contact</a>
+  </nav>
+  <div class="nav-end">
+    <a class="nav-register" href="https://docs.google.com/forms/d/e/1FAIpQLScNnqxzplD28V4_CfbnXEbuTwHp15pwMLMJsrIIhWuJ3hVckA/viewform" target="_blank" rel="noopener">Register</a>
+    <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main class="contact-page" id="contact">
+  <div class="contact-hero">
+    <span class="contact-eyebrow">FEM'26</span>
+    <h1>Get in <span>touch</span></h1>
+    <p>Questions about registration, payments, or the three segments? Reach the council, drop us an email, or send a message below.</p>
+  </div>
+
+  <div class="method-grid">
+    <article class="method-card">
+      <div class="method-icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 6 10 7L22 6"/></svg>
+      </div>
+      <h2>Email</h2>
+      <p><a href="mailto:info.fem26@gmail.com">info.fem26@gmail.com</a></p>
+    </article>
+    <article class="method-card">
+      <div class="method-icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4.5"/><circle cx="17.5" cy="6.5" r="1"/></svg>
+      </div>
+      <h2>Instagram</h2>
+      <p><a href="https://www.instagram.com/fem.futureworld/" target="_blank" rel="noopener">@fem.futureworld</a></p>
+    </article>
+    <article class="method-card">
+      <div class="method-icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 21s7-6.3 7-11.5A7 7 0 0 0 5 9.5C5 14.7 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.3"/></svg>
+      </div>
+      <h2>Campus</h2>
+      <p>Future World School &amp; College, H-11, Islamabad</p>
+    </article>
+  </div>
+
+  <div class="contact-split">
+    <aside class="query-card">
+      <h2>Registration &amp; queries</h2>
+      <p>For school registrations and on-campus payments, reach the FEM'26 registration team.</p>
+      <div class="person">
+        <div>
+          <strong>Amal Shoaib</strong>
+          <span>Registration Director</span>
+        </div>
+      </div>
+      <div class="person">
+        <div>
+          <strong>Eshmal Nisar</strong>
+          <span>Registration Deputy Director</span>
+        </div>
+      </div>
+      <div class="person">
+        <div>
+          <strong>Ms. Beenish Swati</strong>
+          <span>Faculty contact</span>
+        </div>
+        <a href="mailto:beenish.adeel@futureworld.edu.pk">beenish.adeel@futureworld.edu.pk</a>
+      </div>
+      <div class="person">
+        <div>
+          <strong>Ms. Uzma Amir</strong>
+          <span>Faculty contact</span>
+        </div>
+        <a href="mailto:uzma_amir1978@yahoo.com">uzma_amir1978@yahoo.com</a>
+      </div>
+    </aside>
+
+    <form class="form-card" id="contactForm">
+      <h2>Send a message</h2>
+      <p>Tell us your school and what you need. This opens your email app addressed to FEM'26.</p>
+      <label for="name">Name</label>
+      <input id="name" name="name" type="text" required autocomplete="name">
+      <label for="school">School</label>
+      <input id="school" name="school" type="text" required>
+      <label for="email">Email</label>
+      <input id="email" name="email" type="email" required autocomplete="email">
+      <label for="message">Message</label>
+      <textarea id="message" name="message" required></textarea>
+      <button type="submit">Send Message</button>
+      <p class="form-note">Or write us directly at <a href="mailto:info.fem26@gmail.com">info.fem26@gmail.com</a>.</p>
+    </form>
+  </div>
+</main>
+
+<footer>
+  <div class="foot-inner">
+    <div class="foot-contact">
+      <div class="foot-brand">Futurist Entrepreneurial Mania '26</div>
+      <div class="foot-line">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 6 10 7L22 6"/></svg>
+        <a href="mailto:info.fem26@gmail.com">info.fem26@gmail.com</a>
+      </div>
+      <div class="foot-line">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4.5"/><circle cx="17.5" cy="6.5" r="1"/></svg>
+        <a href="https://www.instagram.com/fem.futureworld/" target="_blank" rel="noopener">@fem.futureworld</a>
+      </div>
+      <div class="foot-line">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 21s7-6.3 7-11.5A7 7 0 0 0 5 9.5C5 14.7 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.3"/></svg>
+        Future World School &amp; College, H-11, Islamabad
+      </div>
+    </div>
+    <div class="foot-emblem">
+      <img src="assets/fem-emblem.png" alt="FEM'26 emblem">
+    </div>
+  </div>
+  <div class="foot-bottom">
+    © 2026 FEM'26 — Futurist Entrepreneurial Mania. All rights reserved.
+  </div>
+</footer>
+
+<script>
+  (function(){
+    var header = document.querySelector('header.nav');
+    var toggle = document.querySelector('.nav-toggle');
+    var nav = document.getElementById('site-nav');
+    if(toggle && header && nav){
+      function setOpen(open){
+        header.classList.toggle('is-open', open);
+        toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+        toggle.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+      }
+      toggle.addEventListener('click', function(){
+        setOpen(!header.classList.contains('is-open'));
+      });
+      nav.querySelectorAll('a').forEach(function(link){
+        link.addEventListener('click', function(){ setOpen(false); });
+      });
+      document.addEventListener('keydown', function(e){
+        if(e.key === 'Escape') setOpen(false);
+      });
+    }
+  })();
+
+  document.getElementById('contactForm').addEventListener('submit', function(e){
+    e.preventDefault();
+    var name = document.getElementById('name').value.trim();
+    var school = document.getElementById('school').value.trim();
+    var email = document.getElementById('email').value.trim();
+    var message = document.getElementById('message').value.trim();
+    var subject = encodeURIComponent('FEM\'26 enquiry from ' + school);
+    var body = encodeURIComponent('Name: ' + name + '\nSchool: ' + school + '\nEmail: ' + email + '\n\n' + message);
+    window.location.href = 'mailto:info.fem26@gmail.com?subject=' + subject + '&body=' + body;
+  });
+</script>
+
+</body>
+</html>
